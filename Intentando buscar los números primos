@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x;
+    cout<<"Ingrese numero:";
+    cin>>x;
+    if(x%2==0||x%3==0||x%5==0||x%7==0)
+    cout<<"No es primo";
+    else
+    cout<<"Es primo";
+}
