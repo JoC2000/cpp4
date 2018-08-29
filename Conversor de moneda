@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a, dolar, euro;
+    cout<<"Ingrese soles:";
+    cin>>a;
+    dolar = a * 0.30;
+    euro = a * 0.26;
+    cout << "Dólares:" << dolar << endl;
+    cout << "Euros:" << euro << endl;
+}
