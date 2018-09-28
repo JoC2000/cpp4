@@ -1,0 +1,22 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+int main() {
+    int n, sp = 0, si = 0;
+    cin >> n;
+    int arreglo[n];
+    srand(time(nullptr));
+    for (int i = 0; i < n; i++) {
+        arreglo[i] = rand() % 10;
+        cout << arreglo[i] << " ";
+    }
+    cout << endl;
+    for (int x = 1; x <= n - 1; x += 2)
+        si = si + arreglo[x];
+    cout << si;
+    cout<<endl;
+    for (int y = 0; y <= n - 1; y += 2)
+        sp = sp + arreglo[y];
+    cout<<sp;
+}
